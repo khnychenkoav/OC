@@ -1,0 +1,2 @@
+gcc -o parent_win.exe parent_win.c
+gcc -o child_win.exe child_win.c

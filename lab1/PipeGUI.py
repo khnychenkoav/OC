@@ -78,7 +78,7 @@ class PipeGUI:
         try:
             # Путь к родительскому процессу (выключаем буферизацию stdout и stderr)
             self.process = subprocess.Popen(
-                ['parent_win.exe'],  # Замените это на путь к родительскому процессу
+                ['parent_win.exe'],
                 stdin=subprocess.PIPE, 
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
@@ -127,7 +127,7 @@ class PipeGUI:
             self.process.stdin.write(input_data + "\n")
             self.process.stdin.flush()
             self.output_queue.put(f"Числа отправлены: {num1} и {num2}\n")
-            time.sleep(2)  # Задержка для имитации работы процесса
+            time.sleep(2)
 
             if num2 == 0:
                 result = "Division by zero. Terminating.\n"
