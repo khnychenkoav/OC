@@ -24,14 +24,6 @@ void PrintArray(int *array, int n) {
     printf("]\n");
 }
 
-void BitonicCompare(int *array, int i, int j, int dir) {
-    if (dir == (array[i] > array[j])) {
-        int temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
-}
-
 DWORD WINAPI ThreadFunc(LPVOID param) {
     THREAD_DATA *data = (THREAD_DATA *)param;
     int *array = data->array;
@@ -43,20 +35,17 @@ DWORD WINAPI ThreadFunc(LPVOID param) {
     printf("Thread %d created. Total threads: %d\n", threadId, numThreads);
     LeaveCriticalSection(&printLock);
 
-    int stages = 0;
-    for (int temp = n; temp > 1; temp /= 2) {
-        stages++;
-    }
-
-    for (int stage = 0; stage < stages; stage++) {
-        int seqLen = 1 << (stage + 1);
-        for (int subStage = stage; subStage >= 0; subStage--) {
-            int halfSeqLen = 1 << subStage;
+    for (int size = 2; size <= n; size *= 2) {
+        for (int subSize = size / 2; subSize > 0; subSize /= 2) {
+            int step = size / subSize;
             for (int i = threadId; i < n; i += numThreads) {
-                int j = i ^ halfSeqLen;
-                if (j > i) {
-                    int dir = ((i & seqLen) == 0);
-                    BitonicCompare(array, i, j, dir);
+                int j = i + subSize;
+                if (j < n && (i / size == j / size)) {
+                    if (array[i] > array[j]) {
+                        int temp = array[i];
+                        array[i] = array[j];
+                        array[j] = temp;
+                    }
                 }
             }
             EnterSynchronizationBarrier(&barrier, SYNCHRONIZATION_BARRIER_FLAGS_NO_DELETE);
@@ -125,9 +114,8 @@ int main(int argc, char* argv[]) {
             return 1;
         }
         getchar();
-
     }
-    //waiting for enter
+
     WaitForMultipleObjects(numThreads, threads, TRUE, INFINITE);
 
     clock_t end = clock();
