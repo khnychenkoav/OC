@@ -1,0 +1,1195 @@
+53042 execve("./batchers_sort", ["./batchers_sort", "4"], 0x7ffcf7124bc0 /* 83 vars */) = 0
+53042 brk(NULL)                         = 0x5c126b010000
+53042 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e164be23000
+53042 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+53042 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+53042 fstat(3, {st_mode=S_IFREG|0644, st_size=104391, ...}) = 0
+53042 mmap(NULL, 104391, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e164be09000
+53042 close(3)                          = 0
+53042 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+53042 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+53042 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+53042 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+53042 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+53042 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e164ba00000
+53042 mmap(0x7e164ba28000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7e164ba28000
+53042 mmap(0x7e164bbb0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7e164bbb0000
+53042 mmap(0x7e164bbff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7e164bbff000
+53042 mmap(0x7e164bc05000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e164bc05000
+53042 close(3)                          = 0
+53042 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e164be06000
+53042 arch_prctl(ARCH_SET_FS, 0x7e164be06740) = 0
+53042 set_tid_address(0x7e164be06a10)   = 53042
+53042 set_robust_list(0x7e164be06a20, 24) = 0
+53042 rseq(0x7e164be07060, 0x20, 0, 0x53053053) = 0
+53042 mprotect(0x7e164bbff000, 16384, PROT_READ) = 0
+53042 mprotect(0x5c126ac80000, 4096, PROT_READ) = 0
+53042 mprotect(0x7e164be5b000, 8192, PROT_READ) = 0
+53042 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+53042 munmap(0x7e164be09000, 104391)    = 0
+53042 getrandom("\xdb\x33\x6f\x3f\x41\xc3\xe6\xd4", 8, GRND_NONBLOCK) = 8
+53042 brk(NULL)                         = 0x5c126b010000
+53042 brk(0x5c126b031000)               = 0x5c126b031000
+53042 mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e164bdc5000
+53042 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}) = 0
+53042 write(1, "First 16 elements of the initial"..., 40) = 40
+53042 write(1, "[542433496, 1184707787, 19336009"..., 187) = 187
+53042 write(1, "Last 16 elements of the initial "..., 39) = 39
+53042 write(1, "[2129725901, 1345001187, 4774646"..., 186) = 186
+53042 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, {tv_sec=0, tv_nsec=4010120}) = 0
+53042 rt_sigaction(SIGRT_1, {sa_handler=0x7e164ba99520, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7e164ba45320}, NULL, 8) = 0
+53042 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+53042 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7e164b000000
+53042 mprotect(0x7e164b001000, 8388608, PROT_READ|PROT_WRITE) = 0
+53042 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+53042 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e164b800990, parent_tid=0x7e164b800990, exit_signal=0, stack=0x7e164b000000, stack_size=0x7fff80, tls=0x7e164b8006c0} => {parent_tid=[53043]}, 88) = 53043
+53043 rseq(0x7e164b800fe0, 0x20, 0, 0x53053053 <unfinished ...>
+53042 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+53043 <... rseq resumed>)               = 0
+53042 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+53043 set_robust_list(0x7e164b8009a0, 24 <unfinished ...>
+53042 <... mmap resumed>)               = 0x7e164a600000
+53043 <... set_robust_list resumed>)    = 0
+53042 mprotect(0x7e164a601000, 8388608, PROT_READ|PROT_WRITE) = 0
+53043 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53042 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+53043 <... rt_sigprocmask resumed>NULL, 8) = 0
+53042 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e164ae00990, parent_tid=0x7e164ae00990, exit_signal=0, stack=0x7e164a600000, stack_size=0x7fff80, tls=0x7e164ae006c0} <unfinished ...>
+53043 write(1, "Thread 0 created. Total threads:"..., 35) = 35
+53042 <... clone3 resumed> => {parent_tid=[53044]}, 88) = 53044
+53044 rseq(0x7e164ae00fe0, 0x20, 0, 0x53053053 <unfinished ...>
+53042 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53044 <... rseq resumed>)               = 0
+53042 <... rt_sigprocmask resumed>NULL, 8) = 0
+53042 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+53044 set_robust_list(0x7e164ae009a0, 24 <unfinished ...>
+53042 <... mmap resumed>)               = 0x7e1649c00000
+53044 <... set_robust_list resumed>)    = 0
+53042 mprotect(0x7e1649c01000, 8388608, PROT_READ|PROT_WRITE) = 0
+53044 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+53042 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+53044 <... rt_sigprocmask resumed>NULL, 8) = 0
+53042 <... rt_sigprocmask resumed>[], 8) = 0
+53044 write(1, "Thread 1 created. Total threads:"..., 35 <unfinished ...>
+53042 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e164a400990, parent_tid=0x7e164a400990, exit_signal=0, stack=0x7e1649c00000, stack_size=0x7fff80, tls=0x7e164a4006c0} <unfinished ...>
+53044 <... write resumed>)              = 35
+53042 <... clone3 resumed> => {parent_tid=[53045]}, 88) = 53045
+53045 rseq(0x7e164a400fe0, 0x20, 0, 0x53053053 <unfinished ...>
+53042 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53045 <... rseq resumed>)               = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+53042 <... rt_sigprocmask resumed>NULL, 8) = 0
+53045 set_robust_list(0x7e164a4009a0, 24 <unfinished ...>
+53042 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+53045 <... set_robust_list resumed>)    = 0
+53042 <... mmap resumed>)               = 0x7e1649200000
+53045 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53042 mprotect(0x7e1649201000, 8388608, PROT_READ|PROT_WRITE <unfinished ...>
+53045 <... rt_sigprocmask resumed>NULL, 8) = 0
+53042 <... mprotect resumed>)           = 0
+53045 write(1, "Thread 2 created. Total threads:"..., 35 <unfinished ...>
+53042 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+53045 <... write resumed>)              = 35
+53042 <... rt_sigprocmask resumed>[], 8) = 0
+53042 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e1649a00990, parent_tid=0x7e1649a00990, exit_signal=0, stack=0x7e1649200000, stack_size=0x7fff80, tls=0x7e1649a006c0} => {parent_tid=[53046]}, 88) = 53046
+53046 rseq(0x7e1649a00fe0, 0x20, 0, 0x53053053 <unfinished ...>
+53042 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+53046 <... rseq resumed>)               = 0
+53042 <... rt_sigprocmask resumed>NULL, 8) = 0
+53042 futex(0x7e164b800990, FUTEX_WAIT_BITSET|FUTEX_CLOCK_REALTIME, 53043, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+53046 set_robust_list(0x7e1649a009a0, 24) = 0
+53046 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+53046 write(1, "Thread 3 created. Total threads:"..., 35) = 35
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53043 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 4, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 4, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 4, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 8, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 8, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 8, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53046 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 12, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 12, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 12, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 16, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 16, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 16, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 20, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 20, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 20, NULL <unfinished ...>
+53046 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 24, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 24, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 24, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 28, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 28, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 28, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 3
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 32, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 32, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 32, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 36, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 36, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 36, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 2
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 40, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 40, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 40, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 44, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 44, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 44, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 48, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 48, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 48, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 3
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 52, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 52, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 52, NULL <unfinished ...>
+53046 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 56, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 56, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 56, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 60, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 60, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 60, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53046 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 64, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 64, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 64, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 68, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 68, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 68, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 72, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 72, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 72, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 1
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 76, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 76, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 76, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 3
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 80, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 80, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 80, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 84, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 84, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 84, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 2
+53044 <... futex resumed>)              = 0
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 88, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 88, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 88, NULL <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 2
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 92, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 92, NULL <unfinished ...>
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 92, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 96, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 96, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 96, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 100, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 100, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 100, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 104, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 104, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 104, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 108, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 108, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 108, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 112, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 112, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 112, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53043 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 116, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 116, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 116, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 120, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 120, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 120, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 124, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 124, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 124, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 128, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 128, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 128, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 132, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 132, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 132, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 2
+53043 <... futex resumed>)              = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 136, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 136, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 136, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 140, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 140, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 140, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 144, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 144, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 144, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 148, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 148, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 148, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 152, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 152, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 152, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 156, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 156, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 156, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 160, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 160, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 160, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 164, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 164, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 164, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 168, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 168, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 168, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 172, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 172, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 172, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 176, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 176, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 176, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 180, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 180, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 180, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53044 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 184, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 184, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 184, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53044 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 188, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 188, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 188, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 192, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 192, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 192, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 196, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 196, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 196, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 200, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 200, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 200, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 204, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 204, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 204, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 208, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 208, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 208, NULL <unfinished ...>
+53045 <... futex resumed>)              = 2
+53046 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 212, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 212, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 212, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 2
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 216, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 216, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 216, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 220, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 220, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 220, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 224, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 224, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 224, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 228, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 228, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 228, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 232, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 232, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 232, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 236, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 236, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 236, NULL <unfinished ...>
+53046 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 240, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 240, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 240, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 244, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 244, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 244, NULL <unfinished ...>
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 248, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 248, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 248, NULL <unfinished ...>
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 252, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 252, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 252, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 256, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 256, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 256, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 260, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 260, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 260, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 264, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 264, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 264, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 3
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 268, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 268, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 268, NULL <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 272, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 272, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 272, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 3
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 276, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 276, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 276, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 280, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 280, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 280, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 284, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 284, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 284, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 288, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 288, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 288, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 292, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 292, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 292, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 296, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 296, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 296, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 300, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 300, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 300, NULL <unfinished ...>
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 304, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 304, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 304, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 308, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 308, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 308, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 312, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 312, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 312, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 316, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 316, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 316, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 320, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 320, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 320, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 324, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 324, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 324, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 328, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 328, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 328, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 332, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 332, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 332, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 336, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 336, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 336, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 340, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 340, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 340, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 344, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 344, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 344, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 348, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 348, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 348, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 352, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 352, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 352, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 2
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 356, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 356, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 356, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 360, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 360, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 360, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 364, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 364, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 364, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 368, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 368, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 368, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 372, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 372, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 372, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 376, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 376, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 376, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 380, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 380, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 380, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 384, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 384, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 384, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 388, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 388, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 388, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 392, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 392, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 392, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 396, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 396, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 396, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 400, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 400, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 400, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 404, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 404, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 404, NULL <unfinished ...>
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 408, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 408, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 408, NULL <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 2
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 412, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 412, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 412, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 416, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 416, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 416, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 420, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 420, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 420, NULL <unfinished ...>
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 424, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 424, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 424, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 428, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 428, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 428, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 432, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 432, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 432, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 436, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 436, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 436, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 440, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 440, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 440, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 444, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 444, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 444, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 448, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 448, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 448, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 452, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 452, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 452, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 456, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 456, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 456, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 460, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 460, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 460, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 464, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 464, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 464, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 468, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 468, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 468, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 472, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 472, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 472, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 3
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 476, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 476, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 476, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 3
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 480, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 480, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 480, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 484, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 484, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 484, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 1
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 488, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 488, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 488, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 492, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 492, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 492, NULL <unfinished ...>
+53044 <... futex resumed>)              = 2
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 496, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 496, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 496, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 500, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 500, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 500, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 504, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 504, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 504, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 508, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 508, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 508, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 1
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 512, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 512, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 512, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 516, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 516, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 516, NULL <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 520, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 520, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 520, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53043 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = 2
+53046 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 524, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 524, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 524, NULL <unfinished ...>
+53046 <... futex resumed>)              = 2
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 528, NULL <unfinished ...>
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 528, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 528, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53045 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 532, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 532, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 532, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53044 <... futex resumed>)              = -1 EAGAIN (Ресурс временно недоступен)
+53043 <... futex resumed>)              = 1
+53045 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 536, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 536, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 536, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647) = 3
+53045 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 0
+53043 <... futex resumed>)              = 0
+53045 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 540, NULL <unfinished ...>
+53046 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 540, NULL <unfinished ...>
+53043 futex(0x5c126ac81084, FUTEX_WAIT_PRIVATE, 540, NULL <unfinished ...>
+53044 futex(0x5c126ac81084, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+53046 <... futex resumed>)              = 0
+53044 <... futex resumed>)              = 3
+53043 <... futex resumed>)              = 0
+53045 <... futex resumed>)              = 0
+53046 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+53045 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+53044 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+53043 rt_sigprocmask(SIG_BLOCK, ~[RT_1],  <unfinished ...>
+53046 <... rt_sigprocmask resumed>NULL, 8) = 0
+53045 <... rt_sigprocmask resumed>NULL, 8) = 0
+53044 <... rt_sigprocmask resumed>NULL, 8) = 0
+53043 <... rt_sigprocmask resumed>NULL, 8) = 0
+53046 madvise(0x7e1649200000, 8368128, MADV_DONTNEED <unfinished ...>
+53045 madvise(0x7e1649c00000, 8368128, MADV_DONTNEED <unfinished ...>
+53044 madvise(0x7e164a600000, 8368128, MADV_DONTNEED <unfinished ...>
+53043 madvise(0x7e164b000000, 8368128, MADV_DONTNEED <unfinished ...>
+53046 <... madvise resumed>)            = 0
+53045 <... madvise resumed>)            = 0
+53046 exit(0 <unfinished ...>
+53045 exit(0 <unfinished ...>
+53043 <... madvise resumed>)            = 0
+53046 <... exit resumed>)               = ?
+53044 <... madvise resumed>)            = 0
+53045 <... exit resumed>)               = ?
+53043 exit(0 <unfinished ...>
+53046 +++ exited with 0 +++
+53045 +++ exited with 0 +++
+53044 exit(0 <unfinished ...>
+53043 <... exit resumed>)               = ?
+53044 <... exit resumed>)               = ?
+53043 +++ exited with 0 +++
+53042 <... futex resumed>)              = 0
+53044 +++ exited with 0 +++
+53042 clock_gettime(CLOCK_PROCESS_CPUTIME_ID, {tv_sec=0, tv_nsec=219789650}) = 0
+53042 write(1, "Sorting time: 0.215779 seconds\n", 31) = 31
+53042 write(1, "Array is sorted correctly.\n", 27) = 27
+53042 write(1, "First 16 elements of the sorted "..., 39) = 39
+53042 write(1, "[38277, 132325, 143109, 168295, "..., 128) = 128
+53042 write(1, "Last 16 elements of the sorted a"..., 38) = 38
+53042 write(1, "[2146894576, 2146895504, 2146940"..., 193) = 193
+53042 munmap(0x7e164bdc5000, 266240)    = 0
+53042 exit_group(0)                     = ?
+53042 +++ exited with 0 +++

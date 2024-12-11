@@ -1,0 +1,450 @@
+81530 execve("./manager", ["./manager"], 0x7ffc20c0f618 /* 84 vars */) = 0
+81530 brk(NULL)                         = 0x64b3ceccd000
+81530 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e5946366000
+81530 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v3/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v3/", 0x7ffc4e729f60, 0) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v2/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v2/", 0x7ffc4e729f60, 0) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+81530 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=104391, ...}) = 0
+81530 mmap(NULL, 104391, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7e594634c000
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = 3
+81530 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=92232, ...}) = 0
+81530 mmap(NULL, 94344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e5946334000
+81530 mmap(0x7e5946338000, 53248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7e5946338000
+81530 mmap(0x7e5946345000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x7e5946345000
+81530 mmap(0x7e594634a000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x7e594634a000
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libuuid.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libuuid.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "libuuid.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libuuid.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libuuid.so.1", O_RDONLY|O_CLOEXEC) = 3
+81530 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=35032, ...}) = 0
+81530 mmap(NULL, 36904, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e594632a000
+81530 mmap(0x7e594632c000, 20480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7e594632c000
+81530 mmap(0x7e5946331000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7e5946331000
+81530 mmap(0x7e5946332000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7000) = 0x7e5946332000
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+81530 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+81530 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+81530 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+81530 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+81530 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e5946000000
+81530 mmap(0x7e5946028000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7e5946028000
+81530 mmap(0x7e59461b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7e59461b0000
+81530 mmap(0x7e59461ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7e59461ff000
+81530 mmap(0x7e5946205000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e5946205000
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+81530 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=696512, ...}) = 0
+81530 mmap(NULL, 694384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e5946280000
+81530 mmap(0x7e594629e000, 401408, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x7e594629e000
+81530 mmap(0x7e5946300000, 114688, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x80000) = 0x7e5946300000
+81530 mmap(0x7e594631c000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9c000) = 0x7e594631c000
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81530 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+81530 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=5305304, ...}) = 0
+81530 mmap(NULL, 5319632, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7e5945a00000
+81530 mmap(0x7e5945ab3000, 3354624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb3000) = 0x7e5945ab3000
+81530 mmap(0x7e5945de6000, 831488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e6000) = 0x7e5945de6000
+81530 mmap(0x7e5945eb1000, 389120, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4b0000) = 0x7e5945eb1000
+81530 mmap(0x7e5945f10000, 11216, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7e5945f10000
+81530 close(3)                          = 0
+81530 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e594627e000
+81530 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e594627c000
+81530 arch_prctl(ARCH_SET_FS, 0x7e594627f600) = 0
+81530 set_tid_address(0x7e594627f8d0)   = 81530
+81530 set_robust_list(0x7e594627f8e0, 24) = 0
+81530 rseq(0x7e594627ff20, 0x20, 0, 0x53053053) = 0
+81530 mprotect(0x7e59461ff000, 16384, PROT_READ) = 0
+81530 mprotect(0x7e5945eb1000, 376832, PROT_READ) = 0
+81530 mprotect(0x7e594631c000, 40960, PROT_READ) = 0
+81530 mprotect(0x7e5946332000, 4096, PROT_READ) = 0
+81530 mprotect(0x7e594634a000, 4096, PROT_READ) = 0
+81530 mprotect(0x64b3ce19e000, 4096, PROT_READ) = 0
+81530 mprotect(0x7e594639e000, 8192, PROT_READ) = 0
+81530 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+81530 munmap(0x7e594634c000, 104391)    = 0
+81530 getrandom("\x5a\xc6\x78\x07\x38\x7e\x30\x3c", 8, GRND_NONBLOCK) = 8
+81530 brk(NULL)                         = 0x64b3ceccd000
+81530 brk(0x64b3cecee000)               = 0x64b3cecee000
+81530 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e594625b000
+81530 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+81530 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (Нет такого файла или каталога)
+81530 close(3)                          = 0
+81530 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+81530 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (Нет такого файла или каталога)
+81530 close(3)                          = 0
+81530 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=594, ...}, 0) = 0
+81530 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+81530 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+81530 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 594
+81530 read(3, "", 4096)                 = 0
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+81530 close(3)                          = 0
+81530 newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=58, ...}, 0) = 0
+81530 openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=92, ...}) = 0
+81530 read(3, "# The \"order\" line is only used "..., 4096) = 92
+81530 read(3, "", 4096)                 = 0
+81530 close(3)                          = 0
+81530 futex(0x7e594620b66c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+81530 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=58, ...}) = 0
+81530 read(3, "# Generated by outline \nnameserv"..., 4096) = 58
+81530 read(3, "", 4096)                 = 0
+81530 uname({sysname="Linux", nodename="ArtemsMacBook", ...}) = 0
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=58, ...}) = 0
+81530 close(3)                          = 0
+81530 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+81530 fstat(3, {st_mode=S_IFREG|0644, st_size=228, ...}) = 0
+81530 lseek(3, 0, SEEK_SET)             = 0
+81530 read(3, "127.0.0.1 localhost\n127.0.1.1 Ar"..., 4096) = 228
+81530 read(3, "", 4096)                 = 0
+81530 close(3)                          = 0
+81530 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+81530 fcntl(3, F_GETFD)                 = 0
+81530 fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+81530 fcntl(3, F_GETFL)                 = 0x2 (flags O_RDWR)
+81530 fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+81530 setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+81530 setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+81530 connect(3, {sa_family=AF_INET, sin_port=htons(5672), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Операция выполняется в данный момент)
+81530 poll([{fd=3, events=POLLOUT}], 1, -1) = 1 ([{fd=3, revents=POLLOUT}])
+81530 getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=666118637}) = 0
+81530 sendto(3, "AMQP\0\0\t\1", 8, MSG_NOSIGNAL, NULL, 0) = 8
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=666384784}) = 0
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=666451617}) = 0
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=666582840}) = 0
+81530 poll([{fd=3, events=POLLIN}], 1, 11999) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\0\0\0\1\375\0\n\0\n\0\t\0\0\1\330\fcapabilitiesF\0"..., 131072, 0, NULL, NULL) = 517
+81530 brk(0x64b3ced10000)               = 0x64b3ced10000
+81530 sendto(3, "\1\0\0\0\0\1@\0\n\0\v\0\0\1\34\7productS\0\0\0\nrabb"..., 328, MSG_NOSIGNAL, NULL, 0) = 328
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=669795455}) = 0
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=669889804}) = 0
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=670044491}) = 0
+81530 poll([{fd=3, events=POLLIN}], 1, 11996) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\0\0\0\0\f\0\n\0\36\7\377\0\2\0\0\0<\316", 131072, 0, NULL, NULL) = 20
+81530 sendto(3, "\1\0\0\0\0\0\f\0\n\0\37\7\377\0\2\0\0\0\0\316", 20, MSG_NOSIGNAL, NULL, 0) = 20
+81530 sendto(3, "\1\0\0\0\0\0\10\0\n\0(\1/\0\1\316", 16, MSG_NOSIGNAL, NULL, 0) = 16
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31656, tv_nsec=672503361}) = 0
+81530 poll([{fd=3, events=POLLIN}], 1, 11993) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\0\0\0\0\5\0\n\0)\0\316", 131072, 0, NULL, NULL) = 13
+81530 sendto(3, "\1\0\1\0\0\0\5\0\24\0\n\0\316", 13, MSG_NOSIGNAL, NULL, 0) = 13
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\1\0\0\0\10\0\24\0\v\0\0\0\0\316", 131072, 0, NULL, NULL) = 16
+81530 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e594623a000
+81530 sendto(3, "\1\0\1\0\0\0\34\0002\0\n\0\0\20manager_response\0\0"..., 36, MSG_NOSIGNAL, NULL, 0) = 36
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\1\0\0\0\35\0002\0\v\20manager_response\0\0\0\22"..., 131072, 0, NULL, NULL) = 37
+81530 sendto(3, "\1\0\1\0\0\0\35\0<\0\24\0\0\20manager_response\0\0"..., 37, MSG_NOSIGNAL, NULL, 0) = 37
+81530 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81530 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81530 recvfrom(3, "\1\0\1\0\0\0$\0<\0\25\37amq.ctag-Y_qJ1wKwyMS"..., 131072, 0, NULL, NULL) = 2713
+81530 rt_sigaction(SIGCHLD, {sa_handler=0x64b3ce19bf40, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_NOCLDSTOP, sa_restorer=0x7e5946045320}, NULL, 8) = 0
+81530 rt_sigaction(SIGRT_1, {sa_handler=0x7e5946099520, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_RESTART|SA_SIGINFO, sa_restorer=0x7e5946045320}, NULL, 8) = 0
+81530 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
+81530 mmap(NULL, 8392704, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7e5945000000
+81530 mprotect(0x7e5945001000, 8388608, PROT_READ|PROT_WRITE) = 0
+81530 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+81530 clone3({flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID, child_tid=0x7e5945800990, parent_tid=0x7e5945800990, exit_signal=0, stack=0x7e5945000000, stack_size=0x7fff40, tls=0x7e59458006c0} => {parent_tid=[81531]}, 88) = 81531
+81530 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+81531 rseq(0x7e5945800fe0, 0x20, 0, 0x53053053 <unfinished ...>
+81530 fstat(1,  <unfinished ...>
+81531 <... rseq resumed>)               = 0
+81530 <... fstat resumed>{st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}) = 0
+81530 write(1, "Manager started. Waiting for com"..., 41 <unfinished ...>
+81531 set_robust_list(0x7e59458009a0, 24 <unfinished ...>
+81530 <... write resumed>)              = 41
+81531 <... set_robust_list resumed>)    = 0
+81530 write(1, "> ", 2)                 = 2
+81531 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+81530 fstat(0, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}) = 0
+81531 <... rt_sigprocmask resumed>NULL, 8) = 0
+81530 read(0,  <unfinished ...>
+81531 mmap(NULL, 134217728, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7e593d000000
+81531 munmap(0x7e593d000000, 50331648)  = 0
+81531 munmap(0x7e5944000000, 16777216)  = 0
+81531 mprotect(0x7e5940000000, 135168, PROT_READ|PROT_WRITE) = 0
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 9686\n", 12)     = 12
+81531 write(1, "Ok:10: 14396\n", 13)    = 13
+81531 write(1, "Ok:10: 18737\n", 13)    = 13
+81531 write(1, "Error:10: Unknown exec command\n", 31) = 31
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 29509\n", 13)    = 13
+81531 write(1, "Ok:10: 29509\n", 13)    = 13
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 4241\n", 12)     = 12
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 7734\n", 12)     = 12
+81531 write(1, "Ok:10: 7734\n", 12)     = 12
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 4260\n", 12)     = 12
+81531 write(1, "Ok:10\n", 6)            = 6
+81531 write(1, "Ok:10: 9271\n", 12)     = 12
+81531 write(1, "Ok:10: 9271\n", 12)     = 12
+81531 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81531 poll([{fd=3, events=POLLIN}], 1, -1 <unfinished ...>
+81530 <... read resumed>"\n", 1024)     = 1
+81530 write(1, "> ", 2)                 = 2
+81530 read(0, "create 10\n", 1024)      = 10
+81530 clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7e594627f8d0) = 81653
+81653 set_robust_list(0x7e594627f8e0, 24) = 0
+81530 write(1, "Ok: 81653\n", 10)       = 10
+81530 write(1, "> ", 2 <unfinished ...>
+81653 execve("./node", ["./node", "10"], 0x7ffc4e72aec8 /* 84 vars */ <unfinished ...>
+81530 <... write resumed>)              = 2
+81530 read(0,  <unfinished ...>
+81653 <... execve resumed>)             = 0
+81653 brk(NULL)                         = 0x64098ce76000
+81653 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x786b81979000
+81653 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v3/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v3/", 0x7ffe74c66070, 0) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v2/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/glibc-hwcaps/x86-64-v2/", 0x7ffe74c66070, 0) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 newfstatat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/", {st_mode=S_IFDIR|0775, st_size=4096, ...}, 0) = 0
+81653 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=104391, ...}) = 0
+81653 mmap(NULL, 104391, PROT_READ, MAP_PRIVATE, 3, 0) = 0x786b8195f000
+81653 close(3)                          = 0
+81653 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librabbitmq.so.4", O_RDONLY|O_CLOEXEC) = 3
+81653 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=92232, ...}) = 0
+81653 mmap(NULL, 94344, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x786b81947000
+81653 mmap(0x786b8194b000, 53248, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x786b8194b000
+81653 mmap(0x786b81958000, 20480, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x11000) = 0x786b81958000
+81653 mmap(0x786b8195d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x15000) = 0x786b8195d000
+81653 close(3)                          = 0
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+81653 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+81653 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+81653 fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+81653 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+81653 mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x786b81600000
+81653 mmap(0x786b81628000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x786b81628000
+81653 mmap(0x786b817b0000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x786b817b0000
+81653 mmap(0x786b817ff000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x786b817ff000
+81653 mmap(0x786b81805000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x786b81805000
+81653 close(3)                          = 0
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libssl.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libssl.so.3", O_RDONLY|O_CLOEXEC) = 3
+81653 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=696512, ...}) = 0
+81653 mmap(NULL, 694384, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x786b8189d000
+81653 mmap(0x786b818bb000, 401408, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0x786b818bb000
+81653 mmap(0x786b8191d000, 114688, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x80000) = 0x786b8191d000
+81653 mmap(0x786b81939000, 57344, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9c000) = 0x786b81939000
+81653 close(3)                          = 0
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v3/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "glibc-hwcaps/x86-64-v2/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/home/khnartem/labs/OC/lab4/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = -1 ENOENT (Нет такого файла или каталога)
+81653 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libcrypto.so.3", O_RDONLY|O_CLOEXEC) = 3
+81653 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=5305304, ...}) = 0
+81653 mmap(NULL, 5319632, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x786b81000000
+81653 mmap(0x786b810b3000, 3354624, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xb3000) = 0x786b810b3000
+81653 mmap(0x786b813e6000, 831488, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3e6000) = 0x786b813e6000
+81653 mmap(0x786b814b1000, 389120, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4b0000) = 0x786b814b1000
+81653 mmap(0x786b81510000, 11216, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x786b81510000
+81653 close(3)                          = 0
+81653 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x786b8189b000
+81653 arch_prctl(ARCH_SET_FS, 0x786b8189be00) = 0
+81653 set_tid_address(0x786b8189c0d0)   = 81653
+81653 set_robust_list(0x786b8189c0e0, 24) = 0
+81653 rseq(0x786b8189c720, 0x20, 0, 0x53053053) = 0
+81653 mprotect(0x786b817ff000, 16384, PROT_READ) = 0
+81653 mprotect(0x786b814b1000, 376832, PROT_READ) = 0
+81653 mprotect(0x786b81939000, 40960, PROT_READ) = 0
+81653 mprotect(0x786b8195d000, 4096, PROT_READ) = 0
+81653 mprotect(0x64098b453000, 4096, PROT_READ) = 0
+81653 mprotect(0x786b819b1000, 8192, PROT_READ) = 0
+81653 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+81653 munmap(0x786b8195f000, 104391)    = 0
+81653 getpid()                          = 81653
+81653 fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1), ...}) = 0
+81653 getrandom("\x0a\x7e\x7d\xfd\x9c\xe1\xd4\x49", 8, GRND_NONBLOCK) = 8
+81653 brk(NULL)                         = 0x64098ce76000
+81653 brk(0x64098ce97000)               = 0x64098ce97000
+81653 write(1, "Node 10 started, pid=81653\n", 27) = 27
+81653 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x786b8187a000
+81653 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+81653 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (Нет такого файла или каталога)
+81653 close(3)                          = 0
+81653 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+81653 connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (Нет такого файла или каталога)
+81653 close(3)                          = 0
+81653 newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=594, ...}, 0) = 0
+81653 newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+81653 openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+81653 read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 594
+81653 read(3, "", 4096)                 = 0
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=594, ...}) = 0
+81653 close(3)                          = 0
+81653 newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=58, ...}, 0) = 0
+81653 openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 3
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=92, ...}) = 0
+81653 read(3, "# The \"order\" line is only used "..., 4096) = 92
+81653 read(3, "", 4096)                 = 0
+81653 close(3)                          = 0
+81653 futex(0x786b8180b66c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+81653 openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 3
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=58, ...}) = 0
+81653 read(3, "# Generated by outline \nnameserv"..., 4096) = 58
+81653 read(3, "", 4096)                 = 0
+81653 uname({sysname="Linux", nodename="ArtemsMacBook", ...}) = 0
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=58, ...}) = 0
+81653 close(3)                          = 0
+81653 openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 3
+81653 fstat(3, {st_mode=S_IFREG|0644, st_size=228, ...}) = 0
+81653 lseek(3, 0, SEEK_SET)             = 0
+81653 read(3, "127.0.0.1 localhost\n127.0.1.1 Ar"..., 4096) = 228
+81653 read(3, "", 4096)                 = 0
+81653 close(3)                          = 0
+81653 socket(AF_INET, SOCK_STREAM, IPPROTO_TCP) = 3
+81653 fcntl(3, F_GETFD)                 = 0
+81653 fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+81653 fcntl(3, F_GETFL)                 = 0x2 (flags O_RDWR)
+81653 fcntl(3, F_SETFL, O_RDWR|O_NONBLOCK) = 0
+81653 setsockopt(3, SOL_TCP, TCP_NODELAY, [1], 4) = 0
+81653 setsockopt(3, SOL_SOCKET, SO_KEEPALIVE, [1], 4) = 0
+81653 connect(3, {sa_family=AF_INET, sin_port=htons(5672), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Операция выполняется в данный момент)
+81653 poll([{fd=3, events=POLLOUT}], 1, -1) = 1 ([{fd=3, revents=POLLOUT}])
+81653 getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=61014877}) = 0
+81653 sendto(3, "AMQP\0\0\t\1", 8, MSG_NOSIGNAL, NULL, 0) = 8
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=61379913}) = 0
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=61510857}) = 0
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=61692082}) = 0
+81653 poll([{fd=3, events=POLLIN}], 1, 11999) = 1 ([{fd=3, revents=POLLIN}])
+81653 recvfrom(3, "\1\0\0\0\0\1\375\0\n\0\n\0\t\0\0\1\330\fcapabilitiesF\0"..., 131072, 0, NULL, NULL) = 517
+81653 brk(0x64098ceba000)               = 0x64098ceba000
+81653 sendto(3, "\1\0\0\0\0\1@\0\n\0\v\0\0\1\34\7productS\0\0\0\nrabb"..., 328, MSG_NOSIGNAL, NULL, 0) = 328
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=71255780}) = 0
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=71362001}) = 0
+81653 recvfrom(3, "\1\0\0\0\0\0\f\0\n\0\36\7\377\0\2\0\0\0<\316", 131072, 0, NULL, NULL) = 20
+81653 sendto(3, "\1\0\0\0\0\0\f\0\n\0\37\7\377\0\2\0\0\0\0\316", 20, MSG_NOSIGNAL, NULL, 0) = 20
+81653 sendto(3, "\1\0\0\0\0\0\10\0\n\0(\1/\0\1\316", 16, MSG_NOSIGNAL, NULL, 0) = 16
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=71971674}) = 0
+81653 poll([{fd=3, events=POLLIN}], 1, 11989) = 1 ([{fd=3, revents=POLLIN}])
+81653 recvfrom(3, "\1\0\0\0\0\0\5\0\n\0)\0\316", 131072, 0, NULL, NULL) = 13
+81653 sendto(3, "\1\0\1\0\0\0\5\0\24\0\n\0\316", 13, MSG_NOSIGNAL, NULL, 0) = 13
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81653 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81653 recvfrom(3, "\1\0\1\0\0\0\10\0\24\0\v\0\0\0\0\316", 131072, 0, NULL, NULL) = 16
+81653 mmap(NULL, 135168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x786b81859000
+81653 sendto(3, "\1\0\1\0\0\0\23\0002\0\n\0\0\7node_10\0\0\0\0\0\316", 27, MSG_NOSIGNAL, NULL, 0) = 27
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81653 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81653 recvfrom(3, "\1\0\1\0\0\0\24\0002\0\v\7node_10\0\0\0\5\0\0\0\0\316", 131072, 0, NULL, NULL) = 28
+81653 sendto(3, "\1\0\1\0\0\0\24\0<\0\24\0\0\7node_10\0\0\0\0\0\0\316", 28, MSG_NOSIGNAL, NULL, 0) = 28
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81653 poll([{fd=3, events=POLLIN}], 1, -1) = 1 ([{fd=3, revents=POLLIN}])
+81653 recvfrom(3, "\1\0\1\0\0\0$\0<\0\25\37amq.ctag-EjNiPFfH4pE"..., 131072, 0, NULL, NULL) = 735
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=74149807}) = 0
+81653 sendto(3, "\1\0\1\0\0\0\31\0<\0(\0\0\0\20manager_response\0"..., 33, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 33
+81653 sendto(3, "\2\0\1\0\0\0003\0<\0\0\0\0\0\0\0\0\0\5\4\0$03816bb7-e"..., 59, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 59
+81653 sendto(3, "\3\0\1\0\0\0\5Ok:10\316", 13, MSG_NOSIGNAL, NULL, 0) = 13
+81653 clock_gettime(CLOCK_MONOTONIC, {tv_sec=31670, tv_nsec=74433622}) = 0
+81653 sendto(3, "\1\0\1\0\0\0\31\0<\0(\0\0\0\20manager_response\0"..., 33, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 33
+81653 sendto(3, "\2\0\1\0\0\0003\0<\0\0\0\0\0\0\0\0\0\10\4\0$6786208c-c"..., 59, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 59
+81653 sendto(3, "\3\0\1\0\0\0\10Ok:10: 0\316", 16, MSG_NOSIGNAL, NULL, 0) = 16
+81653 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+81531 <... poll resumed>)               = 1 ([{fd=3, revents=POLLIN}])
+81653 <... clock_gettime resumed>{tv_sec=31670, tv_nsec=74758292}) = 0
+81653 sendto(3, "\1\0\1\0\0\0\31\0<\0(\0\0\0\20manager_response\0"..., 33, MSG_NOSIGNAL|MSG_MORE, NULL, 0 <unfinished ...>
+81531 recvfrom(3,  <unfinished ...>
+81653 <... sendto resumed>)             = 33
+81653 sendto(3, "\2\0\1\0\0\0003\0<\0\0\0\0\0\0\0\0\0\5\4\0$44b05b72-0"..., 59, MSG_NOSIGNAL|MSG_MORE, NULL, 0 <unfinished ...>
+81531 <... recvfrom resumed>"\1\0\1\0\0\0?\0<\0<\37amq.ctag-Y_qJ1wKwyMS"..., 131072, 0, NULL, NULL) = 289
+81653 <... sendto resumed>)             = 59
+81653 sendto(3, "\3\0\1\0\0\0\5Ok:10\316", 13, MSG_NOSIGNAL, NULL, 0) = 13
+81531 write(1, "Ok:10\n", 6 <unfinished ...>
+81653 sendto(3, "\1\0\1\0\0\0\31\0<\0(\0\0\0\20manager_response\0"..., 33, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 33
+81531 <... write resumed>)              = 6
+81653 sendto(3, "\2\0\1\0\0\0003\0<\0\0\0\0\0\0\0\0\0\10\4\0$ae28742f-6"..., 59, MSG_NOSIGNAL|MSG_MORE, NULL, 0) = 59
+81531 write(1, "Ok:10: 0\n", 9 <unfinished ...>
+81653 sendto(3, "\3\0\1\0\0\0\10Ok:10: 0\316", 16, MSG_NOSIGNAL, NULL, 0) = 16
+81531 <... write resumed>)              = 9
+81653 sendto(3, "\1\0\1\0\0\0\31\0<\0(\0\0\0\20manager_response\0"..., 33, MSG_NOSIGNAL|MSG_MORE, NULL, 0 <unfinished ...>
+81531 recvfrom(3,  <unfinished ...>
+81653 <... sendto resumed>)             = 33
+81653 sendto(3, "\2\0\1\0\0\0003\0<\0\0\0\0\0\0\0\0\0\10\4\0$a7895d89-d"..., 59, MSG_NOSIGNAL|MSG_MORE, NULL, 0 <unfinished ...>
+81531 <... recvfrom resumed>"\1\0\1\0\0\0?\0<\0<\37amq.ctag-Y_qJ1wKwyMS"..., 131072, 0, NULL, NULL) = 143
+81653 <... sendto resumed>)             = 59
+81653 sendto(3, "\3\0\1\0\0\0\10Ok:10: 0\316", 16, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+81531 write(1, "Ok:10\n", 6 <unfinished ...>
+81653 <... sendto resumed>)             = 16
+81531 <... write resumed>)              = 6
+81653 recvfrom(3, 0x786b8187a010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81531 recvfrom(3,  <unfinished ...>
+81653 poll([{fd=3, events=POLLIN}], 1, -1 <unfinished ...>
+81531 <... recvfrom resumed>"\1\0\1\0\0\0?\0<\0<\37amq.ctag-Y_qJ1wKwyMS"..., 131072, 0, NULL, NULL) = 146
+81531 write(1, "Ok:10: 0\n", 9)         = 9
+81531 recvfrom(3, "\1\0\1\0\0\0?\0<\0<\37amq.ctag-Y_qJ1wKwyMS"..., 131072, 0, NULL, NULL) = 146
+81531 write(1, "Ok:10: 0\n", 9)         = 9
+81531 recvfrom(3, 0x7e594625b010, 131072, 0, NULL, NULL) = -1 EAGAIN (Ресурс временно недоступен)
+81531 poll([{fd=3, events=POLLIN}], 1, -1 <unfinished ...>
+81530 <... read resumed>"\n", 1024)     = 1
+81530 write(1, "> ", 2)                 = 2
+81530 read(0, "ping 10\n", 1024)        = 8
+81530 kill(81653, 0)                    = 0
+81530 write(1, "Ok: 1\n", 6)            = 6
+81530 write(1, "> ", 2)                 = 2
+81530 read(0, "exit\n", 1024)           = 5
+81530 write(1, "Exiting manager...\n", 19) = 19
+81530 exit_group(0)                     = ?
+81531 <... poll resumed> <unfinished ...>) = ?
+81531 +++ exited with 0 +++
+81530 +++ exited with 0 +++
+81653 <... poll resumed>)               = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+81653 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+81653 +++ killed by SIGINT +++
